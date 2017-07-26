@@ -4,8 +4,11 @@
   "private": true,
   "dependencies": {
     "axios": "^0.16.1",
+    "enzyme": "^2.9.1",
+    "prop-types": "^15.5.10",
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "react-test-renderer": "^15.6.1"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
@@ -14,10 +17,13 @@
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.3",
+    "postcss-cli": "^4.1.0",
+    "postcss-cssnext": "^3.0.2",
     "react-scripts": "0.9.5"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "post-css": "postcss styles/index.css -o public/bundle.css --use postcss-cssnext",
+    "start": "npm run post-css && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom"
   }
