@@ -1,0 +1,20 @@
+exports[`test renders correctly 1`] = `
+<div>
+  <svg>
+    <use
+      xlinkHref="./sprite.svg#billin-usage" />
+  </svg>
+  <svg>
+    <use
+      xlinkHref="./sprite.svg#github-usage" />
+  </svg>
+  <svg>
+    <use
+      xlinkHref="./sprite.svg#linkedin" />
+  </svg>
+  <svg>
+    <use
+      xlinkHref="./sprite.svg#twitter" />
+  </svg>
+</div>
+`;
