@@ -2,6 +2,7 @@ import {
   GraphQLBoolean,
   GraphQLObjectType,
   GraphQLString,
+  GraphQLID,
   GraphQLList,
   GraphQLSchema,
 } from 'graphql';
@@ -41,7 +42,13 @@ const Query = new GraphQLObjectType({
   fields: () => ({
     articles: {
       type: new GraphQLList(articleType),
-      resolve() {
+      args: {
+        id: { type: GraphQLID },
+      },
+      resolve(_, args) {
+        if (args.id) {
+          return db.Article.find({ _id: args.id });
+        }
         return db.Article.find();
       },
     },
