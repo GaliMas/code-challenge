@@ -1,18 +1,14 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import SVG from '../SVG';
 import './index.css';
 
 const Header = () => (
   <header className="header">
-    <a
-      className="logo"
-      href="https://www.billin.net/"
-      rel="noreferrer noopener"
-      target="_blank"
-    >
+    <NavLink className="logo" to="/">
       <SVG id="billin-usage" />
-    </a>
-    <div className="title"><h2 >Billin code challenge</h2></div>
+    </NavLink>
+    <div className="titleHeader"><h2 >Billin code challenge</h2></div>
   </header>
 );
 
