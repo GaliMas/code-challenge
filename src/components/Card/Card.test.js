@@ -2,19 +2,19 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import Card from './Card';
 
-const author = 'Alf Hills';
-const excerpt = 'Nisi id vitae rQui delectus nobis sed. Quis sunt necessitatibus ev';
+const title = 'Tyrrell';
+const content = 'Architecto voluptates corporis cupiditate sed voluptatem sapiente deserunt. Ullam consequatur';
 
-it('renders without crashing', () => {
+it('render without crashing', () => {
   shallow(<Card />);
 });
 
-it('should render author', () => {
-  const wrapper = shallow(<Card author={author} />);
-  expect(wrapper.find('.author').text()).toBe(author);
+it('should render title', () => {
+  const wrapper = shallow(<Card title={title} />);
+  expect(wrapper.find('.cardTitle').text()).toBe(title);
 });
 
-it('should render excerpt', () => {
-  const wrapper = shallow(<Card excerpt={excerpt} />);
-  expect(wrapper.find('.excerpt').text()).toBe(excerpt);
+it('should render content', () => {
+  const wrapper = shallow(<Card content={content} />);
+  expect(wrapper.find('.cardContent').text()).toBe(content);
 });

@@ -1,16 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { NavLink } from 'react-router-dom';
 
-const Card = ({ author, excerpt }) => (
-  <div className="card">
-    <div className="author">{author}</div>
-    <p className="excerpt">{excerpt}</p>
-  </div>
+const Card = ({ content, id, title }) => (
+  <NavLink className="card" to={`/${id}`}>
+    <div className="cardTitle">{title}</div>
+    <p className="cardContent">{content}</p>
+  </NavLink>
 );
 
 Card.propTypes = {
-  author: PropTypes.string,
-  excerpt: PropTypes.string,
+  content: PropTypes.node,
+  id: PropTypes.string,
+  title: PropTypes.node,
 };
 
 export default Card;

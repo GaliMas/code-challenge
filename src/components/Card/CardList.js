@@ -5,14 +5,24 @@ import './index.css';
 
 const List = ({ cards }) => (
   <div className="cardList">
-    {cards.map(card => <Card key={card.id} author={card.author} excerpt={card.excerpt} />)}
+    {Object.keys(cards).map(key => {
+      const card = cards[key];
+      return (<Card
+        title={card.author}
+        content={card.content}
+        key={card.id}
+        id={card.id}
+      >
+
+      </Card>);
+    })}
   </div>
 );
 
 List.propTypes = {
   cards: PropTypes.arrayOf(PropTypes.shape({
     author: PropTypes.string,
-    excerpt: PropTypes.string,
+    content: PropTypes.string,
   })),
 };
 
