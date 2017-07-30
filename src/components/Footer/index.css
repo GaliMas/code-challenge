@@ -2,6 +2,11 @@
   background-color: #e3e3e3;
   height: 50px;
   padding-top: 10px;
+  
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
   text-align: center;
 }
 .footer  svg{

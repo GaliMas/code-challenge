@@ -25,7 +25,7 @@ const Footer = () => (
     >
       <SVG id="twitter" />
     </a>
-  </footer >
+  </footer>
 );
 
 export default Footer;

@@ -1,5 +1,5 @@
 exports[`test renders correctly 1`] = `
-<footer
+<div
   className="footer">
   <a
     href="https://github.com/GaliMas"
@@ -11,7 +11,7 @@ exports[`test renders correctly 1`] = `
     </svg>
   </a>
   <a
-    href="https://www.linkedin.com/in/jorge-galipienso-mas-99861194/"
+    href="www.linkedin.com/in/jorge-galimas"
     rel="noreferrer noopener"
     target="_blank">
     <svg>
@@ -28,5 +28,5 @@ exports[`test renders correctly 1`] = `
         xlinkHref="./sprite.svg#twitter" />
     </svg>
   </a>
-</footer>
+</div>
 `;
