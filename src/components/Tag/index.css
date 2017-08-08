@@ -1,5 +1,16 @@
 .tag{
-  border: 1px solid #908787;
-  margin: 5px;
-  padding: 0px 5px;
+  background-color: #f3f3f3;
+  border: solid 1px #191919;
+  display: inline-block;
+  height: 28px;
+  margin: 0 2px;
+  padding: 0 2px;
+}
+.tag .tagText{
+  color: #191919;
+  font-size: 14px;
+  height: 19px;
+  text-align: left;
+  font-weight: 600;
+  width: 57px;
 }
