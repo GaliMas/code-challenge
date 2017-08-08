@@ -26,8 +26,7 @@
     "react-scripts": "0.9.5"
   },
   "scripts": {
-    "post-css": "postcss styles/index.css -o public/bundle.css --use postcss-cssnext",
-    "start": "npm run post-css && react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom"
   }

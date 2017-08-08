@@ -1,0 +1,65 @@
+html{
+  height: 100%;
+}
+
+body {
+  background-color: hsl(0, 0%, 96%);
+  font-family: 'Roboto', sans-serif;
+  margin: 0px;
+  min-height: 100%;
+  position: relative;
+}
+
+#root{
+  height: 100%;
+}
+
+.App{
+  height: 100%;
+}
+
+.btn{
+  background-color: #4f86b3;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: normal;
+  letter-spacing: .5px;
+  line-height: 36px;
+  text-decoration: none;
+  outline: 0;
+  text-align: center;
+  text-transform: uppercase;
+  transition: .2s ease-out;
+  user-select: none;
+  overflow: hidden;
+  vertical-align: middle;
+  z-index: 1;
+}
+
+.btn:hover {
+    background-color: #549bc6;
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);
+    outline: 0;
+}
+
+.btnAdd{
+  border-radius: 25px;
+  bottom: 20px;
+  height: 50px;
+  font-size: 35px;
+  position: fixed;
+  right: 20px;
+  width: 50px;
+}
+
+input[type="checkbox"]{
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  background-color: #ffffff;
+  border: solid 1px #4f4f4f;
+}
