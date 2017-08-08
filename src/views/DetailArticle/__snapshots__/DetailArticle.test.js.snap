@@ -1,0 +1,76 @@
+exports[`test renders correctly 1`] = `
+<div
+  className="detailArticle">
+  <div
+    className="detailRow">
+    <span
+      className="labelDetailArticle">
+      Author: 
+    </span>
+    <span
+      className="contentDetail">
+      Robb Farrell
+    </span>
+  </div>
+  <div
+    className="detailRow">
+    <span
+      className="labelDetailArticle">
+      Title: 
+    </span>
+    <span
+      className="contentDetail">
+      Corporate Identity Director
+    </span>
+  </div>
+  <div
+    className="detailRow">
+    <span
+      className="labelDetailArticle">
+      Content: 
+    </span>
+    <span
+      className="contentDetail">
+      ex molestias et. Harum placeat soluta officiis fuga.↵
+    </span>
+  </div>
+  <span
+    className="labelDetailArticle">
+    Not published
+  </span>
+  <div
+    className="detailRow">
+    <span
+      className="labelDetailArticle">
+      Tags:
+    </span>
+    <span
+      className="tag">
+      <span
+        className="tagText">
+        convergence
+      </span>
+    </span>
+    <span
+      className="tag">
+      <span
+        className="tagText">
+        Run plum exploit
+      </span>
+    </span>
+  </div>
+  <div
+    className="detailButtons">
+    <button
+      className="btn btnEdit"
+      onClick={[Function]}>
+      edit
+    </button>
+    <button
+      className="btn btnRemove"
+      onClick={[Function]}>
+      remove
+    </button>
+  </div>
+</div>
+`;

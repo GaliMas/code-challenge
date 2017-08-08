@@ -1,3 +1,16 @@
-.detail{
-  padding-top: 100px;
+.detailArticle{
+  padding: 100px 20px;
+}
+.detailArticle .labelDetailArticle {
+  font-weight: bold;
+}
+.detailArticle .detailButtons{
+  margin-top: 20px;
+}
+.detailArticle .detailRow{
+  margin: 10px 0;
+}
+
+.detailArticle .btnRemove{
+  margin: 10px;
 }
