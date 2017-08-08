@@ -1,0 +1,21 @@
+.removeModal .cancel{
+  float: left;
+}
+
+.removeModal .btnRemoveModal{
+  float:right;
+  padding: 1px 6px;
+}
+
+.removeModal .tagContainer{
+  border: 1px solid;
+  max-height: 150px;
+  max-width: 500px;
+  min-height: 50px;
+  overflow-y: scroll;
+  padding: 5px 2px;
+}
+
+.removeModal .content{
+  margin-bottom: 20px;
+}
