@@ -1,5 +1,6 @@
 import { connect } from 'react-redux';
 import { fetchArticles } from '../actions/articles';
+import { createArticle } from '../actions/article';
 import Home from '../views/Home';
 
 const normalizeArticles = articles => Object.keys(articles).map(key => articles[key]);
@@ -7,6 +8,7 @@ const mapStateToProps = ({ articles }) => ({ articles: normalizeArticles(article
 
 const mapDispatchToProps = {
   fetchArticles,
+  createArticle,
 };
 
 export default connect(
