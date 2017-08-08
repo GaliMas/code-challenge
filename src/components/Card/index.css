@@ -1,8 +1,7 @@
 .cardList{
-  display: flex;
-  flex-wrap: wrap;
   padding: 100px 20px;
 }
+
 .card{
   background: white;
   color: black;
@@ -34,26 +33,15 @@
 }
 
 @media screen and (min-width: 600px) {
-    .cardList {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
     .card {
-      flex: 0 1 calc(50% - 25px);
-      margin-bottom: 2em; 
+      margin: 5px;
+      width: calc((100%/2) - 30px);
     }
 }
 
 @media screen and (min-width: 992px) {
-    .cardList {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-
     .card {
-      flex: 0 1 calc(32% - 15px);
-      margin-bottom: 1em;
+      margin: 5px;
+      width: calc((100%/3) - 30px);
     }
 }
