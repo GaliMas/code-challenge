@@ -1,0 +1,38 @@
+.createArticleForm .labelForm{
+    display: block;
+}
+
+.createArticleForm input[type="text"], .createArticleForm textarea{
+  width: 500px;
+}
+.createArticleForm textarea{
+  resize: none;
+}
+
+.createArticleForm button{
+  display: inline-block;
+  height: 36px;
+  padding: 0 2rem;
+  position: relative;
+}
+
+.createArticleForm.cancel{
+  float: left;
+}
+.createArticleForm .save{
+  float:right;
+}
+
+.createArticleForm .formRow{
+  margin: 10px 0;
+}
+
+.createArticleForm .tagContainer{
+  border: 1px solid;
+  max-height: 150px;
+  max-width: 500px;
+  min-height: 50px;
+  overflow-y: scroll;
+  padding: 5px 2px;
+}
+

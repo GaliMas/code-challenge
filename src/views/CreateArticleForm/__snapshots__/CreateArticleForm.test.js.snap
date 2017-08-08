@@ -1,0 +1,100 @@
+exports[`test renders correctly 1`] = `
+<div
+  className="modal undefined"
+  id="myModal">
+  <div
+    className="modal-content">
+    <header
+      className="modalTitle">
+      <span
+        className="close"
+        onClick={[Function]}>
+        ×
+      </span>
+      <h2>
+        New article
+      </h2>
+    </header>
+    <div
+      className="createArticleForm">
+      <div
+        className="formRow">
+        <label
+          className="labelForm">
+          Author
+        </label>
+        <input
+          defaultValue={undefined}
+          name="author"
+          onChange={[Function]}
+          type="text" />
+      </div>
+      <div
+        className="formRow">
+        <label
+          className="labelForm">
+          Title
+        </label>
+        <input
+          defaultValue={undefined}
+          name="title"
+          onChange={[Function]}
+          type="text" />
+      </div>
+      <div
+        className="formRow">
+        <label
+          className="labelForm">
+          Content
+        </label>
+        <textarea
+          defaultValue={undefined}
+          name="content"
+          onChange={[Function]}
+          rows="5"
+          type="text" />
+      </div>
+      <div
+        className="formRow">
+        <label
+          className="published"
+          id="published">
+          Published
+        </label>
+        <input
+          className="published"
+          defaultChecked={undefined}
+          htmlFor="published"
+          name="published"
+          onChange={[Function]}
+          type="checkbox" />
+      </div>
+      <div
+        className="formRow">
+        <label
+          className="tags">
+          Tags
+        </label>
+        <input
+          name="tags"
+          onKeyPress={[Function]}
+          type="text" />
+        <div
+          className="tagContainer" />
+      </div>
+      <button
+        className="btn cancel"
+        onClick={[Function]}
+        type="button">
+        Cancelar
+      </button>
+      <button
+        className="btn save"
+        onClick={[Function]}
+        type="button">
+        Guardar
+      </button>
+    </div>
+  </div>
+</div>
+`;
