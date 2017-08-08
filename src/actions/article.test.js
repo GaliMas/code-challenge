@@ -1,4 +1,13 @@
-import { receiveArticle, FETCH_ARTICLE } from './article';
+import {
+  receiveArticle,
+  create,
+  update,
+  remove,
+  FETCH_ARTICLE,
+  CREATE_ARTICLE,
+  UPDATE_ARTICLE,
+  REMOVE_ARTICLE,
+} from './article';
 
 const article = {
   author: 'Robb Farrell',
@@ -11,6 +20,24 @@ describe('recieve article', () => {
     expect(receiveArticle(article)).toEqual({
       type: FETCH_ARTICLE,
       payload: article,
+    });
+  });
+  it('create article should create CREATE_ARTICLE action', () => {
+    expect(create(article)).toEqual({
+      type: CREATE_ARTICLE,
+      payload: article,
+    });
+  });
+  it('update article should create UPDATE_ARTICLE action', () => {
+    expect(update(article)).toEqual({
+      type: UPDATE_ARTICLE,
+      payload: article,
+    });
+  });
+  it('remove article should create REMOVE_ARTICLE action', () => {
+    expect(remove(article.id)).toEqual({
+      type: REMOVE_ARTICLE,
+      id: article.id,
     });
   });
 });
